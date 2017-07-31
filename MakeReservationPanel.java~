@@ -1,0 +1,69 @@
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class MakeReservationPanel extends JPanel implements ActionListener
+{
+    Date entDate;
+    Date outDate;
+    String nme;
+    String srname;
+    String ýD;
+    
+    private static int count;
+    
+    String c;
+    
+    String code;
+    
+    JButton button;
+   
+    MakeReservationControl makeRes ;
+    
+    public MakeReservationPanel(enter,out,name,surname,ýd)
+    {
+        entDate=enter;
+        outDate=out;
+        nme=name;
+        srname=surname;
+        ýD=ýd;
+        
+        button = new JButton("make reservation");
+        button.addActionListener(this);
+        add(button);
+       
+    }
+    
+    
+    public void actionPerformed(ActionEvent e) 
+    {
+       
+        if( e.getActionCommand().equals("make reservation") )
+        {
+            count++;
+            c=count;
+            Customer c= new Customer(nme,srname,ýD);
+            makeRes= new MakeReservationControl();
+            code = makeRes.booking(entDate,outDate,c);
+            JOptionPane.showMessageDialog(this,code);
+            /*setVisible(false);
+            showResCode = new ShowResCodePanel();
+            showResCode.setBounds(0, 100, 400, 600);
+            FrameDeneme.frame.add(showResCode);
+            showResCode.requestFocus(true);
+            showResCode.requestFocusInWindow();
+            FrameDeneme.frame.repaint();*/
+        }
+        
+        
+    }
+    
+}

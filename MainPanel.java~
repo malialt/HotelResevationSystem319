@@ -1,0 +1,47 @@
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class MainPanel extends JPanel implements ActionListener
+{
+    
+    JButton buttonC;
+   
+    ýnfoCustomerPanel ýnfoCustomer ;
+    
+    public MainPanel()
+    {
+        
+        buttonC = new JButton("customer");
+        button1.addActionListener(this);
+        add(button1);
+       
+    }
+    
+    
+    public void actionPerformed(ActionEvent e) 
+    {
+       
+        if( e.getActionCommand().equals("customer") )
+        {
+            setVisible(false);
+            ýnfoCustomer = new ýnfoCustomerPanel();
+            ýnfoPanel.setBounds(0, 100, 400, 600);
+            FrameDeneme.frame.add(ýnfoCustomer);
+            ýnfoCustomer.requestFocus(true);
+            ýnfoCustomer.requestFocusInWindow();
+            FrameDeneme.frame.repaint();
+        }
+        
+        
+    }
+    
+}

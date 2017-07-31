@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="false" main="" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Test.java" package="" timestamp="19-Jun-2017 18:22:33">
+        <select from="598" to="598"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Customer.java" package="" timestamp="19-Jun-2017 17:37:37">
+        <select from="598" to="598"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="resNode.java" package="" timestamp="19-Jun-2017 17:41:42">
+        <select from="598" to="598"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Room.java" package="" timestamp="19-Jun-2017 18:08:16">
+        <select from="598" to="598"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Hotel.java" package="" timestamp="19-Jun-2017 18:20:55">
+        <select from="598" to="598"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Reservation.java" package="" timestamp="19-Jun-2017 18:26:14">
+        <select from="598" to="598"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

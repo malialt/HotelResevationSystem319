@@ -1,0 +1,16 @@
+public class Customer
+{
+    String name;
+    String lastName;
+    
+    public Customer(String n,String l)
+    {
+        name = n;
+        lastName = l;
+    }
+    
+    public String toString()
+    {
+        return name + " , " +lastName;
+    }
+}
